@@ -1,0 +1,11 @@
+usr/lib/libgmp.10.dylib
+usr/lib/libssl.1.0.1.dylib
+usr/lib/libcrypto.1.0.1.dylib
+usr/lib/libz.1.dylib
+usr/bin/bioskeydump
+usr/bin/sbattach
+usr/bin/sbkeysync
+usr/bin/sbsiglist
+usr/bin/sbsign
+usr/bin/sbvarsign
+usr/bin/sbverify

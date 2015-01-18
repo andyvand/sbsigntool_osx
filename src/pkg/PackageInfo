@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pkg-info format-version="2" relocatable="true" overwrite-permissions="true" useHFSPlusCompression="true" auth="root" identifier="com.AnV.Software.pkg.sbsigntool.0.6" version="0.6">
+  <payload installKBytes="4659" numberOfFiles="11"/>
+  <bundle-version>
+    <bundle CFBundleVersion="1.0.1" CFBundleShortVersionString="1.0.1" SourceVersion="52" id="com.apple.crypto" path="usr/lib/libcrypto.1.0.1.dylib"/>
+    <bundle CFBundleVersion="1.0.1" CFBundleShortVersionString="1.0.1" SourceVersion="52" id="com.apple.ssl" path="usr/lib/libssl.1.0.1.dylib"/>
+    <bundle CFBundleVersion="1.2.8" CFBundleShortVersionString="1.2.8" SourceVersion="56" id="com.apple.zlib" path="usr/lib/libz.1.dylib"/>
+    <bundle CFBundleVersion="6.0.0" CFBundleShortVersionString="6.0.0" SourceVersion="10" id="com.AnV.Software.gmp" path="usr/lib/libgmp.10.dylib"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.bioskeydump" path="usr/bin/bioskeydump"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbattach" path="usr/bin/sbattach"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbkeysync" path="usr/bin/sbkeysync"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbsiglist" path="usr/bin/sbsiglist"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbsign" path="usr/bin/sbsign"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbvarsign" path="usr/bin/sbvarsign"/>
+    <bundle CFBundleVersion="0.6" CFBundleShortVersionString="0.6" SourceVersion="25" id="com.AnV.Software.sbverify" path="usr/bin/sbverify"/>
+  </bundle-version>
+</pkg-info>

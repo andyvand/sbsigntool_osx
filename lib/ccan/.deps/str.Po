@@ -1,0 +1,78 @@
+str.o: ccan/str/str.c ccan/str/str.h ../../config.h /usr/include/string.h \
+  /usr/include/_types.h /usr/local/include/sys/_types.h \
+  /usr/local/include/sys/cdefs.h \
+  /usr/local/include/sys/_symbol_aliasing.h \
+  /usr/local/include/sys/_posix_availability.h \
+  /usr/local/include/machine/_types.h /usr/local/include/i386/_types.h \
+  /usr/include/sys/_pthread/_pthread_types.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h \
+  /usr/local/include/sys/_types/_size_t.h \
+  /usr/local/include/sys/_types/_null.h \
+  /usr/local/include/sys/_types/_rsize_t.h \
+  /usr/local/include/sys/_types/_errno_t.h \
+  /usr/local/include/sys/_types/_ssize_t.h /usr/include/strings.h \
+  /usr/include/secure/_string.h /usr/include/secure/_common.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/stdbool.h \
+  /usr/include/ctype.h /usr/include/runetype.h \
+  /usr/local/include/sys/_types/_ct_rune_t.h \
+  /usr/local/include/sys/_types/_rune_t.h \
+  /usr/local/include/sys/_types/_wchar_t.h \
+  /usr/local/include/sys/_types/_wint_t.h ccan/str/str_debug.h
+
+ccan/str/str.h:
+
+../../config.h:
+
+/usr/include/string.h:
+
+/usr/include/_types.h:
+
+/usr/local/include/sys/_types.h:
+
+/usr/local/include/sys/cdefs.h:
+
+/usr/local/include/sys/_symbol_aliasing.h:
+
+/usr/local/include/sys/_posix_availability.h:
+
+/usr/local/include/machine/_types.h:
+
+/usr/local/include/i386/_types.h:
+
+/usr/include/sys/_pthread/_pthread_types.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/local/include/sys/_types/_size_t.h:
+
+/usr/local/include/sys/_types/_null.h:
+
+/usr/local/include/sys/_types/_rsize_t.h:
+
+/usr/local/include/sys/_types/_errno_t.h:
+
+/usr/local/include/sys/_types/_ssize_t.h:
+
+/usr/include/strings.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/secure/_common.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/include/stdbool.h:
+
+/usr/include/ctype.h:
+
+/usr/include/runetype.h:
+
+/usr/local/include/sys/_types/_ct_rune_t.h:
+
+/usr/local/include/sys/_types/_rune_t.h:
+
+/usr/local/include/sys/_types/_wchar_t.h:
+
+/usr/local/include/sys/_types/_wint_t.h:
+
+ccan/str/str_debug.h:

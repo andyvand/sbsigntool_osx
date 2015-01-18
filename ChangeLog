@@ -1,0 +1,496 @@
+2012-09-28 01d2aa4 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: improve section table parsing
+
+2012-09-28 22fa5ba Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Allow variable sized data directories
+
+2012-09-05 027bde0 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: fix incorrect pointer in add_auth_descriptor
+
+2012-09-05 8a9366d Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: auth descriptor hash does not cover the \0 in the varname
+
+2012-08-24 6a56400 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: fix siglist iteration
+
+2012-08-24 6e4e566 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: Improve default GUID choice
+
+2012-08-24 1b6eaee Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * skkeysync: Add PK-handing code
+
+2012-08-24 c80b5a2 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Refactor signature database data structures
+
+2012-08-23 81bb4e3 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: fix invalid free in keystore_read_entry
+
+2012-08-23 a870a28 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Improve error handling in read_firmware_key_database
+
+2012-08-23 b53ad57 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: insert new keys
+
+2012-08-23 fbedc4b Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: print keystore before key databases
+
+2012-08-23 603e4f9 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Find keys missing from firmware key databases
+
+2012-08-23 7e7fae0 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Rename struct keystore_entry->list to keystore_list
+
+2012-08-22 2a87e12 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Generate and print key descriptions
+
+2012-08-22 a5f7a63 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: add comment to sigdb_iterate
+
+2012-08-22 8c3bd4f Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Change key_id to key_parse
+
+2012-08-22 ac5d82d Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Print filesystem key databases
+
+2012-08-21 0c6ca3f Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: read keystore into kdb->filesystem_keys
+
+2012-08-21 6576207 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Unify key_database
+
+2012-08-21 d48d2a5 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add key_database->filesystem_keys
+
+2012-08-21 4c7eff0 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: keystore -> fs_keystore
+
+2012-08-21 ed3059d Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: pass data buffer (instead of EFI_SIGNATURE_DATA) to key_id
+
+2012-08-21 3f10faa Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: add keystore_entry->root
+
+2012-08-21 2d58004 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add --keystore and --no-default-keystores options
+
+2012-08-21 3729176 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add --verbose option and conditionally print debug output
+
+2012-08-20 651d158 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add keystore parsing functions
+
+2012-08-20 c0f22ed Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add --efivars-dir option to specific different locations for var files
+
+2012-08-20 2625af1 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add X509 key parsing
+
+2012-08-20 7c4b36d Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: Add key ID data to print_key_database()
+
+2012-08-20 d45de48 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbkeysync: read & print signature databases
+
+2012-08-20 63b21b9 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Move EFI_CERT types to efivars.h
+
+2012-08-24 7fca8bd Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * fileio: Add fileio_read_file_noerror()
+
+2012-08-23 0ba703a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: Start with a default set of variable attributes
+
+2012-08-23 922bcc9 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * efivars: Move EFI_VARIABLE_* attributes to efivars.h
+
+2012-08-22 fa42e39 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsiglist: fix signature size check
+
+2012-08-22 ef7f262 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: WIN_CERTIFICATE.dwLength should include the header size
+
+2012-08-22 887f5a1 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: Fix invalid sizeof() for zeroing timestamp data
+
+2012-08-21 378ecab Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsiglist: check for owner and type arguments
+
+2012-08-14 2e7d96b Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsiglist: Fix SignatureSize
+
+2012-08-13 98dc757 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: use fileio_write_file
+
+2012-08-13 3e2bd9b Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Remove unused gen-keyfiles source
+
+2012-08-13 ac3f03f Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * docs: Create man pages for sbvarsign & sbsiglist
+
+2012-08-13 101b703 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Move sources to src/ subdirectory
+
+2012-08-13 9464dcf Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Use size of image data when writing images
+
+2012-08-13 b164b13 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: always parse image regions
+
+2012-08-13 c9481ba Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Include efivars.h in automake infrastructure
+
+2012-08-13 2a38dec Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: run tests for each arch
+
+2012-08-10 dfc59be Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Allow manipulation of i386 PE/COFF files
+
+2012-08-10 96d5769 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Remove arch-specific coff headers
+
+2012-08-04 58d2ad4 Maxim Kammerer <mk@dee.su>
+
+  * image: Prevent an uninitialized variable warning
+
+2012-08-10 1a6fe60 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsiglist: Add utility for creating EFI_SIGNATURE_LISTs
+
+2012-08-10 7b95aee Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * fileio: Add fileio_write_file
+
+2012-08-10 5b15c0a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * efivars: rename efi variable header
+
+2012-08-03 f574194 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * fileio: Unify whole-file reads
+
+2012-08-03 d05cd38 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * fileio: Unify key & cert loading
+
+2012-08-03 ab77d55 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: add functions to add and remove signatures
+
+2012-08-02 d73dd55 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbattach: fix --detach
+
+2012-08-02 7aad206 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbattach: fix missing openssl/evp.h header
+
+2012-07-31 bc755fa Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbvarsign: First cut of a variable-signing tool
+
+2012-06-28 b537e74 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Version 0.3
+
+2012-06-28 34f45aa Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * license: Add OpenSSL exception to GPLv3 terms
+
+2012-06-28 90ac52e Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * COPYING: remove non-license text
+
+2012-06-27 3a17b39 James Bottomley <jbottomley@parallels.com>
+
+  * image: fix signature calculation when there's junk at the end of the efi binary
+
+2012-06-28 99f2a9a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: Add test for PE/COFF cert table header validity
+
+2012-06-25 8d417f2 James Bottomley <jbottomley@parallels.com>
+
+  * image: fix incorrect assumption about signature header
+
+2012-06-28 585915b Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign: handle errors from PKCS7_sign_add_signer()
+
+2012-06-26 183ce60 James Bottomley <jbottomley@parallels.com>
+
+  * sbsign: fix failure to sign when key is password protected
+
+2012-06-20 c07dfb9 Ivan Hu <ivan.hu@canonical.com>
+
+  * configure: Add check for bfh.h
+
+2012-06-19 5e07c4e Ivan Hu <ivan.hu@canonical.com>
+
+  * tests: Add a test to check invalid PKCS7 signature attaching
+
+2012-06-19 bfb778e Ivan Hu <ivan.hu@canonical.com>
+
+  * sbattach: Check that attached signatures are valid PKCS7 data
+
+2012-06-14 bf6df84 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Use a variable for image filename
+
+2012-06-13 9b7f7fb Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Unconditionally parse PE/COFF data
+
+2012-06-13 128f1c1 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Check for failed image load
+
+2012-06-13 b48e256 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: Add tests for missing image, cert & key files
+
+2012-06-13 0af5e01 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: Execute tests in a clean (temporary) directory
+
+2012-06-13 8716e88 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: Use COMPILE.S for assembing test object
+
+2012-06-13 807f0e6 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Version 0.2
+
+2012-06-13 7c2d8bb Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * docs: Add simple manpage for sbattach
+
+2012-06-13 deb9211 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * automake: Clean generated man files
+
+2012-06-13 3cde1e4 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * tests: Add a few simple tests
+
+2012-06-13 cc881c2 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Remove unused test.c file
+
+2012-06-12 4c79e3a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbattach: Add too to manage detached signatures
+
+2012-06-12 564f5bc Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Add facility to write unsigned images
+
+2012-06-11 a07b8d2 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign,sbverify: Update getopt_long optstrings
+
+2012-06-11 5836038 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Add support for detached signatures
+
+2012-06-11 b8a7d51 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Split image signature table reading to separate function
+
+2012-06-11 e9f438c Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Fix warnings from added -W flags
+
+2012-06-11 f19e8bb Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * automake: Add -Wall -Wextra CFLAGS
+
+2012-06-11 af4f088 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign: Add --detached option to create detached PKCS7 signatures
+
+2012-06-11 0c9fbd2 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign: fix flag for verbose operation
+
+2012-06-11 3673db1 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * docs: Fix manpage creation
+
+2012-05-29 9b2f3a7 Adam Conrad <adconrad@0c3.net>
+
+  * autogen.sh: Fix ccan_module assignment
+
+2012-05-28 3fb0f00 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: use read_write_all from ccan
+
+2012-05-28 f1112b4 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: Fix format specifier for 32-bit builds
+
+2012-05-24 d5e634c Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * autoconfiscate
+
+2012-05-23 82f8c30 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * docs: Add initial manpages
+
+2012-05-23 c14efcb Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign,sbverify: help2man-ize usage output
+
+2012-05-23 98a4f10 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Makefile: Add dist targets
+
+2012-05-22 1b2b5c6 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * ccan: Add ccan import logic
+
+2012-05-15 6ff68e5 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Move ccan submodule
+
+2012-05-15 9a08e25 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Remove unused header
+
+2012-05-14 bc618c5 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Remove pkcs7-simple test file
+
+2012-05-14 9ac930e Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Makefile: add install target
+
+2012-05-14 a1b270f Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Makefile: Comment components
+
+2012-05-14 c67b82a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: clean up openssl init
+
+2012-05-14 c499763 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: add check for invalid PKCS7 data
+
+2012-05-14 74eb766 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Add certificate chain verification
+
+2012-05-12 e111127 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * verify: move idc-related parsing to idc.c
+
+2012-05-12 46cf6a6 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsign: fix incorrect check for certificate load
+
+2012-05-12 57d9f0c Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: reformat gap warnings
+
+2012-05-12 ab05bec Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: add cert table to image size
+
+2012-05-12 e1fec08 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: Add check for image hash
+
+2012-05-12 fefe97c Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbverify: check for presence of signature table
+
+2012-05-12 b73f723 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Makefile: add $(tools) var
+
+2012-05-12 55b1940 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsigntool -> sbsign
+
+2012-05-12 a183de9 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: open output file with O_TRUNC
+
+2012-04-24 04b70fc Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * sbsigntooL: expand usage info
+
+2012-04-24 9826a43 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Add GPLv3 text in COPYING
+
+2012-04-24 906654e Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * coff: remove unneeded coff includes
+
+2012-04-23 9d3c8b5 Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Add copyright comments
+
+2012-04-23 e019eec Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * image: warn about potential checksum differences
+
+2012-04-23 01e33cd Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * idc: allocate using the image context
+
+2012-04-23 acd8c0a Jeremy Kerr <jeremy.kerr@canonical.com>
+
+  * Initial commit
+

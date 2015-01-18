@@ -1,0 +1,31 @@
+<== Variable Authentication 2 header ==>
+<- Time Data ->
+Date: 18/1/2013
+Time: 10:26:45
+Nanotime: 0
+Timezone: 0
+Daylight: 0
+<- End of time data ->
+<- Certificate data ->
+Certificate length: 0x18
+Certificate revision: 0x200
+Certificate type: 0xEF1
+Certificate type EFI GUID: {0x4AAFD29D, 0x68DF, 0x49EE, {0x8A, 0xA9, 0x34, 0x7D, 0x37, 0x56, 0x65, 0xA7}}
+<- End of certificate data ->
+<== End of Variable Authentication 2 header ==>
+
+<== Signature list 1 ==>
+<- Signature list header ->
+Signature type EFI GUID: {0xC1C41626, 0x504C, 0x4092, {0xAC, 0xA9, 0x41, 0xF9, 0x36, 0x93, 0x43, 0x28}}
+Signature list size: 0x4C
+Signature header size: 0x0
+Signature size: 0x30
+<- End of signature list header ->
+<- Signature data ->
+Signature owner EFI GUID: {0x00000000, 0x0000, 0x0000, {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}}
+<-Signature ->
+402C750B8670FB7EC73E9407B0732C57AD5CB54907AEF81E3B2180EA4FCE7B2B
+<- End of signature ->
+<- End of signature data ->
+<== End of signature list 1 ==>
+
